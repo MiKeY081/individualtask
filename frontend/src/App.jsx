@@ -5,7 +5,7 @@ import Login from './Login'
 import Register from './Register'
 import { Route, Routes } from 'react-router-dom'
 
-axios.defaults.baseURL = "https://individualtask-backend.vercel.app";
+axios.defaults.baseURL = "https://individualtask-backend.vercel.app/api/v1";
 axios.defaults.withCredentials = true;
 
 function App() {

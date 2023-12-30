@@ -16,7 +16,8 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin: "https://individualtask.vercel.app",
-    credentials: true
+    credentials: true,
+    secure: true,
 }))
 app.use(morgan("dev"))
 
