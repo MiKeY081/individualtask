@@ -10,15 +10,20 @@ import cookieParser from 'cookie-parser';
 config();
 const prisma = new PrismaClient()
 const app = express()
-
-
-app.use(express.json())
-app.use(cookieParser())
 app.use(cors({
     origin: "https://individualtask.vercel.app",
     credentials: true,
     secure: true,
 }))
+
+// app.use(cors({
+//     origin: "https://individualtask.vercel.app",
+//     credentials: true,
+//     secure: true,
+// }));
+app.use(express.json())
+app.use(cookieParser())
+
 app.use(morgan("dev"))
 
 
