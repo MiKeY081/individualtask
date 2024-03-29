@@ -29,4 +29,5 @@ app.use(morgan("dev"));
 
 app.use("/api/v1", userRouter);
 
-const server = app.listen("https://individualtask-backend.vercel.app/api/v1");
+const PORT = "https://individualtask-backend.vercel.app/api/v1" || 3000;
+const server = app.listen(PORT);
